@@ -6,16 +6,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.security.spec.RSAOtherPrimeInfo;
+
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Parent root = FXMLLoader.load(getClass().getResource("fxml/view-students.fxml"));
+        primaryStage.setTitle("Student Manager");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);
